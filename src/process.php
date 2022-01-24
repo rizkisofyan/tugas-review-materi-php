@@ -70,7 +70,7 @@ if($pilihan == '1'){
                 </table>
                 <br><br><br>
                 <h3>Pesan</h3>
-                <form action="pembayaran.php">
+                <form action="pembayaran.php" method="POST">
                     <table>
                         <tr>
                             <td><label for="pilihanMakanan">Pilih Makanan</label></td>
@@ -103,39 +103,45 @@ if($pilihan == '1'){
                                 </select>
                             </td>
                         </tr>
-                            <tr>
-                                <td><label for="jumlahMinuman">jumlah</label></td>
-                                <td>:</td>
-                                <td><input type="number" name="jumlahMinuman" id="jumlahMinuman"></td>
-                            </tr>
-                        </table>
-                    </form>
-                </div>
-        <?php else : ?>
-                <h2>Lanjutkan Pembelian</h2>
-                <table>
-                    <tr>
                         <tr>
-                            <td>Destinasi yang di pilih</td>
+                            <td><label for="jumlahMinuman">jumlah</label></td>
                             <td>:</td>
-                            <td><?=$destinasi?></td>
+                            <td><input type="number" name="jumlahMinuman" id="jumlahMinuman"></td>
                         </tr>
                         <tr>
-                            <td>Harga tiket masuk</td>
-                            <td>:</td>
-                            <td><?=$hargaTiket?>/tiket</td>
+                            <td></td>
+                            <td></td>
+                            <td><button type="submit">pesan</button></td>
                         </tr>
-                    </tr>
-                </table>
-                <br>
-                <form action="pembayaran.php" method="POST">
-                    <label for="jumlah">Jumlah tiket yang ingin di beli</label>
-                    <input type="number" name="jumlah" id="jumlah">
-                    <input type="hidden" name="hargaTiket" value="<?=$hargaTiket?>">
-                    <input type="hidden" name="destinasi" value="<?=$destinasi?>">
-                    <input type="hidden" name="tipe" value="tiket">
-                    <button type="submit">Beli</button>
+                    </table>
+                    <input type="hidden" name="tipe" value="cafe">
                 </form>
+            </div>
+        <?php else : ?>
+            <h2>Lanjutkan Pembelian</h2>
+            <table>
+                <tr>
+                    <tr>
+                        <td>Destinasi yang di pilih</td>
+                        <td>:</td>
+                        <td><?=$destinasi?></td>
+                    </tr>
+                    <tr>
+                        <td>Harga tiket masuk</td>
+                        <td>:</td>
+                        <td><?=$hargaTiket?>/tiket</td>
+                    </tr>
+                </tr>
+            </table>
+            <br>
+            <form action="pembayaran.php" method="POST">
+                <label for="jumlah">Jumlah tiket yang ingin di beli</label>
+                <input type="number" name="jumlah" id="jumlah">
+                <input type="hidden" name="hargaTiket" value="<?=$hargaTiket?>">
+                <input type="hidden" name="destinasi" value="<?=$destinasi?>">
+                <input type="hidden" name="tipe" value="tiket">
+                <button type="submit">Beli</button>
+            </form>
         <?php endif ?>
     </body>
 </html>
