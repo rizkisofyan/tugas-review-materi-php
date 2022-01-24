@@ -61,15 +61,47 @@ if($pilihan == '1'){
                     </tr>
                     <tr>
                         <td>1</td>
-                        <td>Sate Kelinci</td>
-                        <td>Rp. 15000</td>
+                        <td>Roti Bakar</td>
+                        <td>Rp. 13000</td>
                         <td>1</td>
-                        <td>Milk Shake</td>
+                        <td>Es Teh Manis</td>
+                        <td>Rp. 8000</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Seblak</td>
+                        <td>Rp. 10000</td>
+                        <td>2</td>
+                        <td>Milk Tea</td>
+                        <td>Rp. 12000</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Pisang Goreng</td>
+                        <td>Rp. 11000</td>
+                        <td>3</td>
+                        <td>Air Mineral</td>
+                        <td>Rp. 7000</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Sosis Bakar</td>
+                        <td>Rp. 10000</td>
+                        <td>4</td>
+                        <td>Kopi Susu</td>
+                        <td>Rp. 8000</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Mie Ayam</td>
+                        <td>Rp. 12000</td>
+                        <td>4</td>
+                        <td>Thai Tea</td>
                         <td>Rp. 10000</td>
                     </tr>
                 </table>
                 <br><br><br>
-                <h3>Pesan</h3>
+                <h3>Buat Pesanan</h3>
                 <form action="pembayaran.php" method="POST">
                     <table>
                         <tr>
@@ -77,11 +109,11 @@ if($pilihan == '1'){
                             <td>:</td>
                             <td>
                                 <select name="pilihanMakanan" id="pilihanMakanan">
-                                    <option value="1">Sate Kelinci</option>
-                                    <option value="2"></option>
-                                    <option value="3"></option>
-                                    <option value="4"></option>
-                                    <option value="5"></option>
+                                    <option value="1">Roti Bakar</option>
+                                    <option value="2">Seblak</option>
+                                    <option value="3">Pisang Goreng</option>
+                                    <option value="4">Sosis Bakar</option>
+                                    <option value="5">Mie Ayam</option>
                                 </select>
                             </td>
                         </tr>
@@ -95,11 +127,11 @@ if($pilihan == '1'){
                             <td>:</td>
                             <td>
                                 <select name="pilihanMinuman" id="pilihanMinuman">
-                                    <option value="1">Milk Shake</option>
-                                    <option value="2"></option>
-                                    <option value="3"></option>
-                                    <option value="4"></option>
-                                    <option value="5"></option>
+                                    <option value="1">Es Teh Manis</option>
+                                    <option value="2">Milk Tea</option>
+                                    <option value="3">Air Mineral</option>
+                                    <option value="4">Kopi Susu</option>
+                                    <option value="5">Thai Tea</option>
                                 </select>
                             </td>
                         </tr>

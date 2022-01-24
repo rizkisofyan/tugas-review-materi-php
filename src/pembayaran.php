@@ -42,37 +42,37 @@ if($tipe == 'tiket'){
     $jumlahMinuman = $_POST['jumlahMinuman'];
 
     if ($pilihanMakanan == '1') {
-        $hargaMakanan = 15000;
-        $namaMakanan = 'Sate Kelinci';
+        $hargaMakanan = 13000;
+        $namaMakanan = 'Roti Bakar';
     } else if ($pilihanMakanan == '2') {
-        $hargaMakanan = 0;
-        $namaMakanan = 'Sate Kelinci';
+        $hargaMakanan = 10000;
+        $namaMakanan = 'Seblak';
     } else if ($pilihanMakanan == '3') {
-        $hargaMakanan = 0;
-        $namaMakanan = 'Sate Kelinci';
+        $hargaMakanan = 11000;
+        $namaMakanan = 'Pisang Goreng';
     } else if ($pilihanMakanan == '4') {
-        $hargaMakanan = 0;
-        $namaMakanan = 'Sate Kelinci';
+        $hargaMakanan = 10000;
+        $namaMakanan = 'Sosis Bakar';
     }else{
-        $hargaMakanan = 0;
-        $namaMakanan = 'Sate Kelinci';
+        $hargaMakanan = 12000;
+        $namaMakanan = 'Mie Ayam';
     }
 
     if ($pilihanMinuman == '1') {
-        $hargaMinuman = 10000;
-        $namaMinuman = 'Milk Shake';
+        $hargaMinuman = 8000;
+        $namaMinuman = 'Es Teh Manis';
     } else if ($pilihanMinuman == '2') {
-        $hargaMinuman = 0;
-        $namaMinuman = 'Milk Shake';
+        $hargaMinuman = 12000;
+        $namaMinuman = 'Milk Tea';
     } else if ($pilihanMinuman == '3') {
-        $hargaMinuman = 0;
-        $namaMinuman = 'Milk Shake';
+        $hargaMinuman = 7000;
+        $namaMinuman = 'Air Mineral';
     } else if ($pilihanMinuman == '4') {
-        $hargaMinuman = 0;
-        $namaMinuman = 'Milk Shake';
+        $hargaMinuman = 8000;
+        $namaMinuman = 'Kopi Susu';
     }else{
-        $hargaMinuman = 0;
-        $namaMinuman = 'Milk Shake';
+        $hargaMinuman = 10000;
+        $namaMinuman = 'Thai Tea';
     }
     
     $totalHarga = $hargaMakanan * $jumlahMakanan + $hargaMinuman * $jumlahMinuman;
@@ -147,7 +147,7 @@ if($tipe == 'tiket'){
                     <td><?= $namaMinuman?></td>
                 </tr>
                 <tr>
-                    <td>Harga satu porsi <?= $namaMinuman?></td>
+                    <td>Harga satu gelas <?= $namaMinuman?></td>
                     <td>:</td>
                     <td>Rp. <?= $hargaMinuman?></td>
                 </tr>

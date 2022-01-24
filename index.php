@@ -4,11 +4,11 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Destinasi Yogyakarta</title>
+        <title>Selamat Datang di Yogyakarta</title>
     </head>
     <body style="font-family: Arial">
         <div class="container">
-            <h2>Pilih Destinasi Yang Kamu Inginkan</h2>
+            <h2>Pilih Destinasi Yang Kamu Ingin Kunjungi</h2>
             <div class="pilihan">
                 <table>
                     <tr>
