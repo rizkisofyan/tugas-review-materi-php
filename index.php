@@ -58,7 +58,7 @@
                     <option value="7">Cafe Pendopo Lawas</option>
                     <option value="8">Goa Pindul</option>
                 </select>
-                <button type="submit" name="submit">kirim</button>
+                <button type="submit" name="submit">Kirim</button>
             </form>
         </div>
     </body>
